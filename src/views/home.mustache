@@ -1,0 +1,29 @@
+<html>
+<head>
+    
+    <title>TESTANDO MUSTACHE</title>
+    
+</head>
+<body>
+    <h1>TITULO DA PAG</h1>
+   <ul>{{saudacoes}}</ul>
+    <h2> OLA {{nome}}, vc tem {{idade}} anos </h2>
+    <hr/>
+    {{#msg}}
+    ola {{nome}}
+    {{/msg}}
+
+    <h2>LISTA DE PRODUTOS APARTIR DE 12 reais</h2>
+    <ul>
+    {{#caros}}
+    {{>partials/produtoItem}}
+    {{/caros}}
+    </ul>
+     <h2>LISTA DE todos PRODUTOs</h2>
+    <ul>
+    {{#produtos}}
+    {{>partials/produtoItem}}
+    {{/produtos}}
+    </ul>
+</body>
+</html>

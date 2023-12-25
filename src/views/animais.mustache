@@ -1,0 +1,32 @@
+<html>
+<head>
+    
+    <title>TAREFA ANIMAIS</title>
+    
+</head>
+<body>
+    <h1>ANIMAIS LIST</h1>
+  <!-- <ul>{{saudacoes}}</ul>
+    <h2> OLA {{nome}}, vc tem {{idade}} anos </h2>
+    <hr/>
+    {{#msg}}
+    ola {{nome}}
+    {{/msg}}
+    -->
+     
+     <h2>LISTA DE TODOS ANIMAIS</h2>
+    <ul>
+    {{#animais}}
+    {{>partials/animalDados}}
+    {{/animais}}
+    </ul>
+
+    <h2>LISTA DE PEIXES</h2>
+    <ul>
+    {{#peixes}}
+    {{>partials/animalDados}}
+    {{/peixes}}
+    </ul>
+        
+</body>
+</html>
